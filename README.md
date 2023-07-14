@@ -1,8 +1,8 @@
-##Dependency Injection Framework in C#
+## Dependency Injection Framework in C#
 
 Implementation of a Dependency Injection (DI) framework for educational purposes. This project should be considered as my understanding of how DI works, rather than a standalone project.
 
-##Let's get started!
+## Let's get started!
 Example of service registration:
 
 ```csharp
@@ -16,7 +16,7 @@ var scope = container.CreateScope();
 var controller = scope.Resolve(typeof(IController));
 ```
 
-##Methods
+## Methods
 * **RegisterSingleton** - registers an object as a Singleton. This means that the instance of the object will be shared across the entire application.
 
 * **RegisterTransient (under development)** - registers an object as a transient object. This means that the instance of the object will be created individually for each request and will not be stored in the container.
