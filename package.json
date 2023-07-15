@@ -1,0 +1,17 @@
+{
+    "name": "com.separate.di",
+    "author": "BritishEllie",
+    "displayName": "SeparateDI",
+    "description": "Implementation of the DI framework in C#. Can be used in the Unity as a DI implementation option without being tied to Unity",
+    "unity": "2020.3",
+    "version": "2023.6.22",
+    "keywords": [
+        "separate",
+        "di"
+    ],
+    "dependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/emmersmacks/DIFramework.git"
+    }
+}
