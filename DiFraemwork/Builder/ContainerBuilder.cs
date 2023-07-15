@@ -1,16 +1,20 @@
-﻿namespace DiFraemwork;
+﻿using System.Collections.Generic;
 
-public class ContainerBuilder : IContainerBuilder
+namespace DiFraemwork
 {
-    private readonly List<ServiceDescriptor> _descriptors = new List<ServiceDescriptor>();
+    public class ContainerBuilder : IContainerBuilder
+    {
+        private readonly List<ServiceDescriptor> _descriptors = new List<ServiceDescriptor>();
     
-    public void Register(ServiceDescriptor descriptor)
-    {
-        _descriptors.Add(descriptor);
-    }
+        public void Register(ServiceDescriptor descriptor)
+        {
+            _descriptors.Add(descriptor);
+        }
 
-    public IContainer Build()
-    {
-        return new Container(_descriptors);
+        public IContainer Build()
+        {
+            return new Container(_descriptors);
+        }
     }
 }
+

@@ -1,8 +1,12 @@
-namespace DiFraemwork;
+using System;
 
-//contained dependency information
-public abstract class ServiceDescriptor
+namespace DiFraemwork
 {
-    public Type ServiceType { get; set; }
-    public Lifetime Lifetime { get; set; }
+    //contained dependency information
+    public abstract class ServiceDescriptor
+    {
+        public Type ServiceType { get; set; }
+        public Lifetime Lifetime { get; set; }
+    }
 }
+

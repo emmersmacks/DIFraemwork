@@ -1,13 +1,17 @@
-namespace DiFraemwork.Descriptors;
+using System;
 
-public class InstanceBasedServiceDescriptor : ServiceDescriptor
+namespace DiFraemwork.Descriptors
 {
-    public object Instance { get; set; }
-
-    public InstanceBasedServiceDescriptor(Type serviceType, object instance)
+    public class InstanceBasedServiceDescriptor : ServiceDescriptor
     {
-        Lifetime = Lifetime.Singleton;
-        ServiceType = serviceType;
-        Instance = instance;
+        public object Instance { get; set; }
+
+        public InstanceBasedServiceDescriptor(Type serviceType, object instance)
+        {
+            Lifetime = Lifetime.Singleton;
+            ServiceType = serviceType;
+            Instance = instance;
+        }
     }
 }
+

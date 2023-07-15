@@ -1,8 +1,10 @@
-namespace DiFraemwork;
-
-public enum Lifetime
+namespace DiFraemwork
 {
-    Transient,
-    Scoped,
-    Singleton
+    public enum Lifetime
+    {
+        Transient,
+        Scoped,
+        Singleton
+    }
 }
+

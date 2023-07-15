@@ -1,6 +1,8 @@
-namespace DiFraemwork;
-
-public interface IContainer
+namespace DiFraemwork
 {
-    IScope CreateScope();
+    public interface IContainer
+    {
+        IScope CreateScope();
+    }
 }
+

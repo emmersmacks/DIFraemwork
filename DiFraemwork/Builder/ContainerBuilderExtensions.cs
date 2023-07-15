@@ -1,8 +1,9 @@
-﻿using DiFraemwork.Descriptors;
+﻿using System;
+using DiFraemwork.Descriptors;
 
-namespace DiFraemwork;
-
-public static class ContainerBuilderExtensions
+namespace DiFraemwork
+{
+    public static class ContainerBuilderExtensions
 {
     private static IContainerBuilder RegisterType(this IContainerBuilder builder, Type service, Type implementation, Lifetime lifetime)
     {
@@ -114,3 +115,5 @@ public static class ContainerBuilderExtensions
 
     #endregion
 }
+}
+

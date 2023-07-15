@@ -1,6 +1,10 @@
-﻿namespace DiFraemwork.Descriptors;
+﻿using System;
 
-public class TypeBasedServiceDescriptor : ServiceDescriptor
+namespace DiFraemwork.Descriptors
 {
-    public Type ImplementationType { get; set; }
+    public class TypeBasedServiceDescriptor : ServiceDescriptor
+    {
+        public Type ImplementationType { get; set; }
+    }
 }
+

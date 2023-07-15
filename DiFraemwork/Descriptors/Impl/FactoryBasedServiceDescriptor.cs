@@ -1,6 +1,10 @@
-namespace DiFraemwork.Descriptors;
+using System;
 
-public class FactoryBasedServiceDescriptor : ServiceDescriptor
+namespace DiFraemwork.Descriptors
 {
-    public Func<IScope, object> Factory { get; set; }
+    public class FactoryBasedServiceDescriptor : ServiceDescriptor
+    {
+        public Func<IScope, object> Factory { get; set; }
+    }
 }
+

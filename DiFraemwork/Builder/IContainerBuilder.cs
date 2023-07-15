@@ -1,7 +1,9 @@
-namespace DiFraemwork;
-
-public interface IContainerBuilder
+namespace DiFraemwork
 {
-    void Register(ServiceDescriptor descriptor);
-    IContainer Build();
+    public interface IContainerBuilder
+    {
+        void Register(ServiceDescriptor descriptor);
+        IContainer Build();
+    }
 }
+
